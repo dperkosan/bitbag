@@ -1,6 +1,2 @@
-# Read the documentation: https://github.com/FriendsOfSymfony/FOSElasticaBundle/blob/master/Resources/doc/setup.md
-fos_elastica:
-    clients:
-        default: { url: '%env(ELASTICSEARCH_URL)%' }
-    indexes:
-        app: null
+imports:
+    - { resource: "@SyliusVueStorefrontPlugin/Resources/config/indexes/vue_storefront_catalog.yaml" }
