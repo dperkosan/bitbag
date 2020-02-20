@@ -64,9 +64,9 @@ class CategoryIndex
                 "is_anchor" => "1",
                 "custom_layout_update" => "",
                 "children_count" => $this->totalChildrenCount,
-                "url_key" => $this->getUrlKey($category['slug']),
-                "url_path" => $category['slug'],
-                "slug" => $this->getUrlKey($category['slug'])
+                "url_key" => $this->getUrlKey($category['slug']).'-'.$category['id'],
+                "url_path" => $category['slug'].'-'.$category['id'],
+                "slug" => $this->getUrlKey($category['slug']).'-'.$category['id']
             ];
             
             $result = Es::qryES('POST', 'vue_storefront_catalog_category/_doc/'.$category['id'], json_encode($qry));
