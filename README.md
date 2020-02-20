@@ -21,15 +21,13 @@ Installation
 ------------
 
 ```bash
-$ git clone git@github.com:dperkosan/eshop.git
-$ cd eshop
+$ git clone ssh://git@git.webedia-group.net:8080/surprizemi/ecommerce/plabbeauty/sylius.git
+$ cd sylius
+$ cp .env .env.local
 ```
 
-Please, contact me for:
-* DB
-* media folder
-* jwt folder
-* .env.local file
+DB, media folder and jwt folder, you can find here: https://drive.google.com/drive/folders/1cwDh0lYcihIt_GS4gLDO3UxKraJB4-E8?usp=sharing
+
 
 ```bash
 $ composer install
